@@ -1,10 +1,12 @@
 package com.github.thiagomatar.secretsanta.service;
 
 import com.github.thiagomatar.secretsanta.domain.Person;
+import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
-public class Delivery {
+@Service
+public class DeliveryService {
 
     public void delivery(Map<Person, Person> sortedList){
         sortedList.forEach((k,v)->{
