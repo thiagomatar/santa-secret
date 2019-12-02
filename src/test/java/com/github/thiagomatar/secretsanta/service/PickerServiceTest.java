@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-class PickerTest {
+class PickerServiceTest {
 
     @Test
     void draw() {
@@ -21,9 +21,9 @@ class PickerTest {
         candidates.add(Person.builder().name("Sofi").build());
         candidates.add(Person.builder().name("Baby").build());
 
-        Picker ssp = new Picker();
+        PickerService ssp = new PickerService();
         Map<Person, Person> shuffledList = ssp.pick(candidates);
-        Delivery delivery = new Delivery();
+        DeliveryService delivery = new DeliveryService();
         delivery.delivery(shuffledList);
 
 

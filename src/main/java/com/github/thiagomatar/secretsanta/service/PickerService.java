@@ -1,14 +1,15 @@
 package com.github.thiagomatar.secretsanta.service;
 
 import com.github.thiagomatar.secretsanta.domain.Person;
+import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
-public class Picker {
+@Service
+public class PickerService {
 
     public Map<Person, Person> pick(List<Person> candidates){
         Collections.shuffle(candidates);
