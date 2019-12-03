@@ -1,6 +1,8 @@
 package com.github.thiagomatar.secretsanta.domain;
 
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.CascadeType;
 import javax.persistence.GeneratedValue;
@@ -10,6 +12,8 @@ import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
 
+@Builder
+@NoArgsConstructor
 @Data
 public class Group {
 

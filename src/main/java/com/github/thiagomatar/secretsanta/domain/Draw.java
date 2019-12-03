@@ -2,6 +2,7 @@ package com.github.thiagomatar.secretsanta.domain;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -12,6 +13,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+@NoArgsConstructor
 @Data
 @Builder
 @Entity
