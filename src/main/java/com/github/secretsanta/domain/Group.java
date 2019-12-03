@@ -5,11 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.CascadeType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +13,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Entity
+@Table(name = "secret_group")
 public class Group {
 
     @Id
@@ -24,7 +22,7 @@ public class Group {
     private Long id;
 
     @OneToMany(
-            mappedBy = "post",
+            mappedBy = "group",
             cascade = CascadeType.ALL,
             orphanRemoval = true
     )
