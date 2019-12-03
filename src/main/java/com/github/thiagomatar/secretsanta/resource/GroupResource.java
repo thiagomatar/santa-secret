@@ -1,8 +1,8 @@
 package com.github.thiagomatar.secretsanta.resource;
 
-import com.github.thiagomatar.secretsanta.PersonViewModel;
 import com.github.thiagomatar.secretsanta.domain.Group;
 import com.github.thiagomatar.secretsanta.service.GroupService;
+import com.github.thiagomatar.secretsanta.viewmodel.PersonViewModel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

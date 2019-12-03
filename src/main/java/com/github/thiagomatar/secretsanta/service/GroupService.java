@@ -1,9 +1,10 @@
 package com.github.thiagomatar.secretsanta.service;
 
-import com.github.thiagomatar.secretsanta.PersonViewModel;
+
 import com.github.thiagomatar.secretsanta.domain.Group;
 import com.github.thiagomatar.secretsanta.domain.Person;
 import com.github.thiagomatar.secretsanta.repository.GroupRepository;
+import com.github.thiagomatar.secretsanta.viewmodel.PersonViewModel;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -24,7 +25,7 @@ public class GroupService {
         group.addPerson(
                 Person.builder()
                         .name(personViewModel.getName())
-                        .phone(personViewModel.getCellphone())
+                        .phone(personViewModel.getPhone())
                         .build());
         return this.groupRepository.save(group);
     }

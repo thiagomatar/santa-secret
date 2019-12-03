@@ -6,7 +6,7 @@ import lombok.Data;
 public class PersonViewModel {
 
     private String name;
-    private String cellphone;
+    private String phone;
     private Long groupId;
 
 }
