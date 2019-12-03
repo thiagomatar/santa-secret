@@ -1,4 +1,4 @@
-package com.github.thiagomatar.secretsanta.viewmodel;
+package com.github.secretsanta.viewmodel;
 
 import lombok.Data;
 

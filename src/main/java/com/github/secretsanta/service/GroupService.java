@@ -1,10 +1,10 @@
-package com.github.thiagomatar.secretsanta.service;
+package com.github.secretsanta.service;
 
 
-import com.github.thiagomatar.secretsanta.domain.Group;
-import com.github.thiagomatar.secretsanta.domain.Person;
-import com.github.thiagomatar.secretsanta.repository.GroupRepository;
-import com.github.thiagomatar.secretsanta.viewmodel.PersonViewModel;
+import com.github.secretsanta.domain.Group;
+import com.github.secretsanta.domain.Person;
+import com.github.secretsanta.repository.GroupRepository;
+import com.github.secretsanta.viewmodel.PersonViewModel;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

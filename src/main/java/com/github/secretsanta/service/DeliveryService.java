@@ -1,6 +1,6 @@
-package com.github.thiagomatar.secretsanta.service;
+package com.github.secretsanta.service;
 
-import com.github.thiagomatar.secretsanta.domain.Person;
+import com.github.secretsanta.domain.Person;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;

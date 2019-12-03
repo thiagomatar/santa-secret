@@ -1,4 +1,4 @@
-package com.github.thiagomatar.secretsanta;
+package com.github.secretsanta;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

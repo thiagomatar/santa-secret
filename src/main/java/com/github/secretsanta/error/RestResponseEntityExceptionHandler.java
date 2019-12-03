@@ -1,4 +1,4 @@
-package com.github.thiagomatar.secretsanta.error;
+package com.github.secretsanta.error;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

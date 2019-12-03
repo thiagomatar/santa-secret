@@ -8,7 +8,7 @@
         <version>2.2.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.github.thiagomatar</groupId>
+    <groupId>com.github</groupId>
     <artifactId>secret-santa</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>secret-santa</name>

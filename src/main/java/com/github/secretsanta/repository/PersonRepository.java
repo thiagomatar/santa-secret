@@ -1,6 +1,6 @@
-package com.github.thiagomatar.secretsanta.repository;
+package com.github.secretsanta.repository;
 
-import com.github.thiagomatar.secretsanta.domain.Person;
+import com.github.secretsanta.domain.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

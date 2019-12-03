@@ -1,4 +1,4 @@
-package com.github.thiagomatar.secretsanta.domain;
+package com.github.secretsanta.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
