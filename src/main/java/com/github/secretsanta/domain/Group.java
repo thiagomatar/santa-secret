@@ -21,10 +21,16 @@ public class Group {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Column
+    private String name;
+
+
+
     @OneToMany(
             mappedBy = "group",
             cascade = CascadeType.ALL,
-            orphanRemoval = true
+            orphanRemoval = true,
+            fetch = FetchType.EAGER
     )
     private List<Person> personGroup = new ArrayList<>();
 
