@@ -21,6 +21,11 @@ public class GroupResource {
         return this.groupService.save(group);
     }
 
+    @PutMapping
+    public GroupViewModelToFetch update(@RequestBody GroupViewModelToUpdate group) {
+        return this.groupService.update(group);
+    }
+
     @PostMapping("/add-person")
     public GroupViewModelToAddPerson addPerson(@RequestBody PersonViewModelToAdd personViewModel) {
         return this.groupService.addPerson(personViewModel);

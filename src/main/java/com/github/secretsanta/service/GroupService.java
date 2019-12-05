@@ -26,6 +26,12 @@ public class GroupService {
 
     }
 
+    public GroupViewModelToFetch update(GroupViewModelToUpdate groupViewModelToUpdate) {
+        final Group group = this.groupRepository.findById(groupViewModelToUpdate.getId()).orElseThrow(() -> new RuntimeException(String.format("Group with id [%s] not found", groupViewModelToUpdate.getId())));
+        this.groupRepository.save(group);
+        return GroupViewModelToFetch.builder().id(group.getId()).name(group.getName()).build();
+    }
+
     public GroupViewModelToAddPerson addPerson(PersonViewModelToAdd personViewModel) {
         final Group group = this.groupRepository.findById(personViewModel.getGroupId()).orElseThrow(() -> new RuntimeException(String.format("Group with id [%s] not found", personViewModel.getGroupId())));
         group.addPerson(Person.builder().name(personViewModel.getName()).phone(personViewModel.getPhone()).build());
